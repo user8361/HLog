@@ -2,13 +2,14 @@
  * @Author: user8361
  * @Date: 2022-06-28 21:02:47
  * @LastEditors: user8361
- * @LastEditTime: 2022-07-13 17:27:35
+ * @LastEditTime: 2022-07-13 19:56:51
  * @FilePath: /projects/HLog/README.md
  * @Description: 
  * 
  * Copyright (c) 2022 by user8361-AHU, All Rights Reserved. 
 -->
 # HLog
+>实现sylar高性能服务器中的日志模块
 log日志器
 
 # 使用自旋锁 https://blog.csdn.net/vincent_wen0766/article/details/108558656
