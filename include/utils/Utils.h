@@ -2,8 +2,8 @@
  * @Author: user8361
  * @Date: 2022-07-09 16:23:56
  * @LastEditors: user8361
- * @LastEditTime: 2022-07-13 16:56:06
- * @FilePath: /projects/HLog/include/Utils.h
+ * @LastEditTime: 2022-07-17 22:34:23
+ * @FilePath: /projects/HLog/include/utils/Utils.h
  * @Description:
  *
  * Copyright (c) 2022 by user8361-AHU, All Rights Reserved.
@@ -21,8 +21,8 @@
 #include <cstring>
 #include <fstream>
 #include <sstream>
-#include "Fiber.h"
-#include "LoggerManager.h"
+#include "utils/Fiber.h"
+#include "log/LoggerManager.h"
 
 /**
  * @brief 使用流的方式将日志级别写入到logger中

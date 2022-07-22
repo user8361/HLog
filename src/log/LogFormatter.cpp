@@ -9,8 +9,8 @@
  * Copyright (c) 2022 by user8361-AHU, All Rights Reserved.
  */
 
-#include "LogFormatter.h"
-#include "Logger.h"
+#include "log/LogFormatter.h"
+#include "log/Logger.h"
 namespace H
 {
     LogFormatter::LogFormatter(const std::string &pattern) : m_pattern(pattern)

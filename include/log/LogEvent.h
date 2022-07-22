@@ -2,8 +2,8 @@
  * @Author: user8361
  * @Date: 2022-07-07 21:49:26
  * @LastEditors: user8361
- * @LastEditTime: 2022-07-13 17:05:52
- * @FilePath: /projects/HLog/include/LogEvent.h
+ * @LastEditTime: 2022-07-17 22:20:00
+ * @FilePath: /projects/HLog/include/log/LogEvent.h
  * @Description:
  *
  * Copyright (c) 2022 by user8361-AHU, All Rights Reserved.
@@ -12,7 +12,7 @@
 #pragma once
 #include <memory>
 #include <sstream>
-#include "Noncopyable.h"
+#include "utils/Noncopyable.h"
 #include "LogLevel.h"
 #include <stdarg.h>
 namespace H

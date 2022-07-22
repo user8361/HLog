@@ -2,7 +2,7 @@
  * @Author: user8361
  * @Date: 2022-06-28 21:02:47
  * @LastEditors: user8361
- * @LastEditTime: 2022-07-13 19:56:51
+ * @LastEditTime: 2022-07-17 22:33:42
  * @FilePath: /projects/HLog/README.md
  * @Description: 
  * 
@@ -102,3 +102,8 @@ error: expected unqualified-id before ‘if’ (使用宏的时候加了作用�
 ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/112ef992e6524478afb677cf3d2c79de~tplv-k3u1fbpfcp-watermark.image?)
 - 定位发现，只声明了智能指针而没有分配内存就使用了，所以出现了段错误。
   - std::shared_ptr<Logger> logger; --> std::shared_ptr<Logger> logger(new Logger);
+
+
+#  undefined reference to `vtable for 
+- 检查使用的类的基础关系上是否有没有实现的虚函数
+- 检查使用的类的库是否被链接

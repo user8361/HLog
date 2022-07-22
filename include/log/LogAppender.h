@@ -2,8 +2,8 @@
  * @Author: user8361
  * @Date: 2022-07-07 15:31:32
  * @LastEditors: user8361
- * @LastEditTime: 2022-07-09 21:04:42
- * @FilePath: /projects/HLog/include/LogAppender.h
+ * @LastEditTime: 2022-07-22 22:05:35
+ * @FilePath: /projects/HLog/include/log/LogAppender.h
  * @Description:  输出落地点
  *
  * 定义日志的输出落地点，
@@ -21,11 +21,15 @@
 #pragma once
 
 #include <fstream>
-#include "Logger.h"
+// #include "log/Logger.h"
+#include "utils/Mutex.h"
+#include "log/LogLevel.h"
+#include <memory>
 namespace H
 {
     class Logger;
-    class LogFormatter;
+    class LogEvent; 
+    class LogFormatter; 
     class LogAppender
     {
     public:
@@ -118,6 +122,7 @@ namespace H
         typedef std::shared_ptr<StdoutLogAppender> m_ptr;
         void log(std::shared_ptr<Logger> logger, LogLevel::Level level, std::shared_ptr<LogEvent> event) override;
         std::string toYamlString() override;
+        ~StdoutLogAppender() {}
     };
 
     /**
@@ -156,6 +161,7 @@ namespace H
          * @return false
          */
         bool reopen();
+        ~FileLogAppender() {}
 
     private:
         std::string m_file_name;     // 文件路径

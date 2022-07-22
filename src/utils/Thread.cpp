@@ -2,15 +2,15 @@
  * @Author: user8361
  * @Date: 2022-07-13 13:52:43
  * @LastEditors: user8361
- * @LastEditTime: 2022-07-13 16:55:28
- * @FilePath: /projects/HLog/src/Thread.cpp
+ * @LastEditTime: 2022-07-17 22:08:02
+ * @FilePath: /projects/HLog/src/utils/Thread.cpp
  * @Description:
  *
  * Copyright (c) 2022 by user8361-AHU, All Rights Reserved.
  */
-#include "Thread.h"
-#include "Logger.h"
-#include "Utils.h"
+#include "utils/Thread.h"
+#include "log/Logger.h"
+#include "utils/Utils.h"
 namespace H
 {
     static thread_local Thread *t_thread = nullptr;

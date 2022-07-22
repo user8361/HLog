@@ -10,7 +10,7 @@
  */
 #pragma once
 #include <map>
-#include "Singleton.h"
+#include "utils/Singleton.h"
 #include "Logger.h"
 namespace H
 {

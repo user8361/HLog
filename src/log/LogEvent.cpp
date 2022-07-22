@@ -9,8 +9,8 @@
  * Copyright (c) 2022 by user8361-AHU, All Rights Reserved.
  */
 
-#include "LogEvent.h"
-#include "Logger.h"
+#include "log/LogEvent.h"
+#include "log/Logger.h"
 
 namespace H
 {

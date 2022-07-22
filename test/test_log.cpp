@@ -2,16 +2,19 @@
  * @Author: user8361
  * @Date: 2022-07-13 12:30:29
  * @LastEditors: user8361
- * @LastEditTime: 2022-07-13 17:23:48
+ * @LastEditTime: 2022-07-17 22:41:41
  * @FilePath: /projects/HLog/test/test_log.cpp
  * @Description:
  *
  * Copyright (c) 2022 by user8361-AHU, All Rights Reserved.
  */
 #include <iostream>
-#include "Logger.h"
-#include "LogFormatter.h"
-#include "Utils.h"
+#include "log/Logger.h"
+#include "log/LogAppender.h"
+#include "log/LogFormatter.h"
+#include "log/LogEvent.h"
+#include "utils/Utils.h"
+#include "utils/Fiber.h"
 #include <time.h>
 
 int main()

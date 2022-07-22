@@ -2,8 +2,8 @@
  * @Author: user8361
  * @Date: 2022-06-28 21:03:13
  * @LastEditors: user8361
- * @LastEditTime: 2022-07-12 15:25:33
- * @FilePath: /projects/HLog/include/Logger.h
+ * @LastEditTime: 2022-07-17 22:12:16
+ * @FilePath: /projects/HLog/include/log/Logger.h
  * @Description: 日志器
  *
  * 对外使用的类，输入的日志级别大于等于 Logger的日志才能被真正写入
@@ -16,10 +16,9 @@
 #include <list>
 #include <yaml-cpp/yaml.h>
 
-#include "Mutex.h"
+#include "utils/Mutex.h"
 #include "LogLevel.h"
 #include "LogEvent.h"
-// #include "LogFormatter.h"
 #include "LogAppender.h"
 #include <functional>
 
